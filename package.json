@@ -1,0 +1,51 @@
+{
+  "name": "nodejs-server-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for a Node.js Server with either MySQL or MONGODB as database. (Ofcourse you can use some other databases.)",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donymvarkey/nodejs-server-boilerplate.git"
+  },
+  "keywords": [
+    "backend",
+    "nodejs",
+    "mysql",
+    "mongodb",
+    "server",
+    "template"
+  ],
+  "author": "Dony M Varkey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donymvarkey/nodejs-server-boilerplate.git"
+  },
+  "homepage": "https://github.com/donymvarkey/nodejs-server-boilerplate.git#README",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.2",
+    "chalk": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.9",
+    "mongoose-autopopulate": "^0.16.0",
+    "morgan": "^1.10.0",
+    "stripe": "^8.214.0",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "eslint": "^8.12.0",
+    "nodemon": "^2.0.15"
+  }
+}
